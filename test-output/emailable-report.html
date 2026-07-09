@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">15</td><td class="num attn">1</td><td class="num">0</td><td class="num attn">2</td><td class="num">9,284</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.WebTesting.TestNG.Tc061_TestNGTimeoutsAttribute</td><td><a href="#m0">testCase1</a></td><td rowspan="1">1783579109911</td><td rowspan="1">5024</td></tr><tr class="failedodd"><td rowspan="1">com.WebTesting.TestNG.Tc062_TestNGDependsOnMethodAttribute</td><td><a href="#m1">loginTest</a></td><td rowspan="1">1783579118979</td><td rowspan="1">3</td></tr><tr><th colspan="4">Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.WebTesting.TestNG.Tc062_TestNGDependsOnMethodAttribute</td><td><a href="#m2">logoutTest</a></td><td rowspan="1">1783579118989</td><td rowspan="1">0</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">com.WebTesting.TestNG.Tc059_TestNGPriorityAttribute</td><td><a href="#m3">addToCart</a></td><td rowspan="1">1783579119003</td><td rowspan="1">2</td></tr><tr class="passedeven"><td><a href="#m4">login</a></td><td rowspan="1">1783579118999</td><td rowspan="1">2</td></tr><tr class="passedeven"><td><a href="#m5">logout</a></td><td rowspan="1">1783579119010</td><td rowspan="1">2</td></tr><tr class="passedeven"><td><a href="#m6">register</a></td><td rowspan="1">1783579118995</td><td rowspan="1">2</td></tr><tr class="passedodd"><td rowspan="5">com.WebTesting.TestNG.Tc060_TestNGInvocationCountAttribute</td><td><a href="#m7">login</a></td><td rowspan="3">1783579109807</td><td rowspan="3">5</td></tr><tr class="passedodd"><td><a href="#m8">login</a></td></tr><tr class="passedodd"><td><a href="#m9">login</a></td></tr><tr class="passedodd"><td><a href="#m10">resgister</a></td><td rowspan="1">1783579109782</td><td rowspan="1">12</td></tr><tr class="passedodd"><td><a href="#m11">searchProduct</a></td><td rowspan="1">1783579109847</td><td rowspan="1">5</td></tr><tr class="passedeven"><td rowspan="1">com.WebTesting.TestNG.Tc061_TestNGTimeoutsAttribute</td><td><a href="#m12">testCase2</a></td><td rowspan="1">1783579114940</td><td rowspan="1">4019</td></tr><tr class="passedodd"><td rowspan="1">com.WebTesting.TestNG.Tc062_TestNGDependsOnMethodAttribute</td><td><a href="#m13">registerTest</a></td><td rowspan="1">1783579118963</td><td rowspan="1">10</td></tr><tr class="passedeven"><td rowspan="4">com.WebTesting.TestNG.Tc063_TestNGDisableTestFromExecutionusingEnabledAttribute</td><td><a href="#m14">login</a></td><td rowspan="1">1783579109877</td><td rowspan="1">5</td></tr><tr class="passedeven"><td><a href="#m15">logout</a></td><td rowspan="1">1783579109900</td><td rowspan="1">4</td></tr><tr class="passedeven"><td><a href="#m16">register</a></td><td rowspan="1">1783579109862</td><td rowspan="1">5</td></tr><tr class="passedeven"><td><a href="#m17">search</a></td><td rowspan="1">1783579109891</td><td rowspan="1">3</td></tr></tbody>
+</table>
+<h2>Test</h2><h3 id="m0">com.WebTesting.TestNG.Tc061_TestNGTimeoutsAttribute#testCase1</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.internal.thread.ThreadTimeoutException: Method com.WebTesting.TestNG.Tc061_TestNGTimeoutsAttribute.testCase1() didn&apos;t finish within the time-out 5000
+	at java.base/java.lang.Thread.sleep0(Native Method)
+	at java.base/java.lang.Thread.sleep(Thread.java:509)
+	at com.WebTesting.TestNG.Tc061_TestNGTimeoutsAttribute.testCase1(Tc061_TestNGTimeoutsAttribute.java:12)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 6 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.WebTesting.TestNG.Tc062_TestNGDependsOnMethodAttribute#loginTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected:&lt;false&gt; but was:&lt;true&gt;
+	at com.WebTesting.TestNG.Tc062_TestNGDependsOnMethodAttribute.loginTest(Tc062_TestNGDependsOnMethodAttribute.java:22)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.WebTesting.TestNG.Tc062_TestNGDependsOnMethodAttribute#logoutTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method com.WebTesting.TestNG.Tc062_TestNGDependsOnMethodAttribute.logoutTest() on instance com.WebTesting.TestNG.Tc062_TestNGDependsOnMethodAttribute@4218d6a3 depends on not successfully finished methods 
+[com.WebTesting.TestNG.Tc062_TestNGDependsOnMethodAttribute.loginTest() on instance com.WebTesting.TestNG.Tc062_TestNGDependsOnMethodAttribute@4218d6a3]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.WebTesting.TestNG.Tc059_TestNGPriorityAttribute#addToCart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.WebTesting.TestNG.Tc059_TestNGPriorityAttribute#login</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.WebTesting.TestNG.Tc059_TestNGPriorityAttribute#logout</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.WebTesting.TestNG.Tc059_TestNGPriorityAttribute#register</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.WebTesting.TestNG.Tc060_TestNGInvocationCountAttribute#login</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.WebTesting.TestNG.Tc060_TestNGInvocationCountAttribute#login</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.WebTesting.TestNG.Tc060_TestNGInvocationCountAttribute#login</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">com.WebTesting.TestNG.Tc060_TestNGInvocationCountAttribute#resgister</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">com.WebTesting.TestNG.Tc060_TestNGInvocationCountAttribute#searchProduct</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">com.WebTesting.TestNG.Tc061_TestNGTimeoutsAttribute#testCase2</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">com.WebTesting.TestNG.Tc062_TestNGDependsOnMethodAttribute#registerTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">com.WebTesting.TestNG.Tc063_TestNGDisableTestFromExecutionusingEnabledAttribute#login</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">com.WebTesting.TestNG.Tc063_TestNGDisableTestFromExecutionusingEnabledAttribute#logout</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m16">com.WebTesting.TestNG.Tc063_TestNGDisableTestFromExecutionusingEnabledAttribute#register</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m17">com.WebTesting.TestNG.Tc063_TestNGDisableTestFromExecutionusingEnabledAttribute#search</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

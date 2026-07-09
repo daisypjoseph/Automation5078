@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="1" total="19" passed="15" failed="2" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-07-09T12:08:29 IST" name="Suite" finished-at="2026-07-09T12:08:39 IST" duration-ms="9284">
+    <groups>
+    </groups>
+    <test started-at="2026-07-09T12:08:29 IST" name="Test" finished-at="2026-07-09T12:08:39 IST" duration-ms="9284">
+      <class name="com.WebTesting.TestNG.Tc062_TestNGDependsOnMethodAttribute">
+        <test-method signature="registerTest()[pri:1, instance:com.WebTesting.TestNG.Tc062_TestNGDependsOnMethodAttribute@4218d6a3]" started-at="2026-07-09T12:08:38 IST" name="registerTest" finished-at="2026-07-09T12:08:38 IST" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerTest -->
+        <test-method signature="loginTest()[pri:2, instance:com.WebTesting.TestNG.Tc062_TestNGDependsOnMethodAttribute@4218d6a3]" started-at="2026-07-09T12:08:38 IST" name="loginTest" finished-at="2026-07-09T12:08:38 IST" depends-on-methods="com.WebTesting.TestNG.Tc062_TestNGDependsOnMethodAttribute.registerTest" duration-ms="3" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected:<false> but was:<true>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected:<false> but was:<true>
+at org.testng.AssertJUnit.fail(AssertJUnit.java:65)
+at org.testng.AssertJUnit.failNotEquals(AssertJUnit.java:467)
+at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:88)
+at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:230)
+at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:240)
+at com.WebTesting.TestNG.Tc062_TestNGDependsOnMethodAttribute.loginTest(Tc062_TestNGDependsOnMethodAttribute.java:22)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method signature="logoutTest()[pri:3, instance:com.WebTesting.TestNG.Tc062_TestNGDependsOnMethodAttribute@4218d6a3]" started-at="2026-07-09T12:08:38 IST" name="logoutTest" finished-at="2026-07-09T12:08:38 IST" depends-on-methods="com.WebTesting.TestNG.Tc062_TestNGDependsOnMethodAttribute.loginTest" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method com.WebTesting.TestNG.Tc062_TestNGDependsOnMethodAttribute.logoutTest() on instance com.WebTesting.TestNG.Tc062_TestNGDependsOnMethodAttribute@4218d6a3 depends on not successfully finished methods 
+[com.WebTesting.TestNG.Tc062_TestNGDependsOnMethodAttribute.loginTest() on instance com.WebTesting.TestNG.Tc062_TestNGDependsOnMethodAttribute@4218d6a3]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method com.WebTesting.TestNG.Tc062_TestNGDependsOnMethodAttribute.logoutTest() on instance com.WebTesting.TestNG.Tc062_TestNGDependsOnMethodAttribute@4218d6a3 depends on not successfully finished methods 
+[com.WebTesting.TestNG.Tc062_TestNGDependsOnMethodAttribute.loginTest() on instance com.WebTesting.TestNG.Tc062_TestNGDependsOnMethodAttribute@4218d6a3]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutTest -->
+      </class> <!-- com.WebTesting.TestNG.Tc062_TestNGDependsOnMethodAttribute -->
+      <class name="com.WebTesting.TestNG.Tc061_TestNGTimeoutsAttribute">
+        <test-method signature="testCase1()[pri:1, instance:com.WebTesting.TestNG.Tc061_TestNGTimeoutsAttribute@3270d194]" started-at="2026-07-09T12:08:29 IST" name="testCase1" finished-at="2026-07-09T12:08:34 IST" duration-ms="5024" status="FAIL">
+          <exception class="org.testng.internal.thread.ThreadTimeoutException">
+            <message>
+              <![CDATA[Method com.WebTesting.TestNG.Tc061_TestNGTimeoutsAttribute.testCase1() didn't finish within the time-out 5000]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.thread.ThreadTimeoutException: Method com.WebTesting.TestNG.Tc061_TestNGTimeoutsAttribute.testCase1() didn't finish within the time-out 5000
+at java.base/java.lang.Thread.sleep0(Native Method)
+at java.base/java.lang.Thread.sleep(Thread.java:509)
+at com.WebTesting.TestNG.Tc061_TestNGTimeoutsAttribute.testCase1(Tc061_TestNGTimeoutsAttribute.java:12)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:47)
+at org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:76)
+at org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:11)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.thread.ThreadTimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase1 -->
+        <test-method signature="testCase2()[pri:2, instance:com.WebTesting.TestNG.Tc061_TestNGTimeoutsAttribute@3270d194]" started-at="2026-07-09T12:08:34 IST" name="testCase2" finished-at="2026-07-09T12:08:38 IST" duration-ms="4019" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase2 -->
+      </class> <!-- com.WebTesting.TestNG.Tc061_TestNGTimeoutsAttribute -->
+      <class name="com.WebTesting.TestNG.Tc063_TestNGDisableTestFromExecutionusingEnabledAttribute">
+        <test-method signature="register()[pri:1, instance:com.WebTesting.TestNG.Tc063_TestNGDisableTestFromExecutionusingEnabledAttribute@55182842]" started-at="2026-07-09T12:08:29 IST" name="register" description="This is Register test" finished-at="2026-07-09T12:08:29 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- register -->
+        <test-method signature="login()[pri:2, instance:com.WebTesting.TestNG.Tc063_TestNGDisableTestFromExecutionusingEnabledAttribute@55182842]" started-at="2026-07-09T12:08:29 IST" name="login" description="This is Login test" finished-at="2026-07-09T12:08:29 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="search()[pri:3, instance:com.WebTesting.TestNG.Tc063_TestNGDisableTestFromExecutionusingEnabledAttribute@55182842]" started-at="2026-07-09T12:08:29 IST" name="search" description="This is search product" finished-at="2026-07-09T12:08:29 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search -->
+        <test-method signature="logout()[pri:5, instance:com.WebTesting.TestNG.Tc063_TestNGDisableTestFromExecutionusingEnabledAttribute@55182842]" started-at="2026-07-09T12:08:29 IST" name="logout" description="This is Logout Test" finished-at="2026-07-09T12:08:29 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+      </class> <!-- com.WebTesting.TestNG.Tc063_TestNGDisableTestFromExecutionusingEnabledAttribute -->
+      <class name="com.WebTesting.TestNG.Tc060_TestNGInvocationCountAttribute">
+        <test-method signature="resgister()[pri:1, instance:com.WebTesting.TestNG.Tc060_TestNGInvocationCountAttribute@4c583ecf]" started-at="2026-07-09T12:08:29 IST" name="resgister" finished-at="2026-07-09T12:08:29 IST" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resgister -->
+        <test-method signature="login()[pri:2, instance:com.WebTesting.TestNG.Tc060_TestNGInvocationCountAttribute@4c583ecf]" started-at="2026-07-09T12:08:29 IST" name="login" finished-at="2026-07-09T12:08:29 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="login()[pri:2, instance:com.WebTesting.TestNG.Tc060_TestNGInvocationCountAttribute@4c583ecf]" started-at="2026-07-09T12:08:29 IST" name="login" finished-at="2026-07-09T12:08:29 IST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="login()[pri:2, instance:com.WebTesting.TestNG.Tc060_TestNGInvocationCountAttribute@4c583ecf]" started-at="2026-07-09T12:08:29 IST" name="login" finished-at="2026-07-09T12:08:29 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="searchProduct()[pri:3, instance:com.WebTesting.TestNG.Tc060_TestNGInvocationCountAttribute@4c583ecf]" started-at="2026-07-09T12:08:29 IST" name="searchProduct" finished-at="2026-07-09T12:08:29 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchProduct -->
+      </class> <!-- com.WebTesting.TestNG.Tc060_TestNGInvocationCountAttribute -->
+      <class name="com.WebTesting.TestNG.Tc059_TestNGPriorityAttribute">
+        <test-method signature="register()[pri:1, instance:com.WebTesting.TestNG.Tc059_TestNGPriorityAttribute@76505305]" started-at="2026-07-09T12:08:38 IST" name="register" description="This is Register test" finished-at="2026-07-09T12:08:38 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- register -->
+        <test-method signature="login()[pri:2, instance:com.WebTesting.TestNG.Tc059_TestNGPriorityAttribute@76505305]" started-at="2026-07-09T12:08:38 IST" name="login" description="This is Login test" finished-at="2026-07-09T12:08:39 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="addToCart()[pri:3, instance:com.WebTesting.TestNG.Tc059_TestNGPriorityAttribute@76505305]" started-at="2026-07-09T12:08:39 IST" name="addToCart" description="This is Add product to cart" finished-at="2026-07-09T12:08:39 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCart -->
+        <test-method signature="logout()[pri:4, instance:com.WebTesting.TestNG.Tc059_TestNGPriorityAttribute@76505305]" started-at="2026-07-09T12:08:39 IST" name="logout" description="This is Logout Test" finished-at="2026-07-09T12:08:39 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+      </class> <!-- com.WebTesting.TestNG.Tc059_TestNGPriorityAttribute -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
