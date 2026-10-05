@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Smoke Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Smoke Test(failed)">
+    <parameter name="bname" value="edge"/>
+    <groups>
+      <run>
+        <include name="smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.BlazeDemo.TestCases.SmokeTestCompleteFlow">
+        <methods>
+          <include name="smokeTestCompleteFlow"/>
+        </methods>
+      </class> <!-- com.BlazeDemo.TestCases.SmokeTestCompleteFlow -->
+      <class name="com.BlazeDemo.TestCases.SmokeTestPageLoad">
+        <methods>
+          <include name="verifyDropdownVisibility"/>
+          <include name="verifyPageLoaded"/>
+        </methods>
+      </class> <!-- com.BlazeDemo.TestCases.SmokeTestPageLoad -->
+    </classes>
+  </test> <!-- Smoke Test(failed) -->
+</suite> <!-- Failed suite [Smoke Suite] -->

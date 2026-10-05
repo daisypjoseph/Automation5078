@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-10-05T12:42:00 IST" name="Smoke Suite" finished-at="2026-10-05T12:42:25 IST" duration-ms="25432">
+    <groups>
+      <group name="smoke">
+        <method signature="SmokeTestCompleteFlow.smokeTestCompleteFlow()[pri:0, instance:com.BlazeDemo.TestCases.SmokeTestCompleteFlow@28194a50]" name="smokeTestCompleteFlow" class="com.BlazeDemo.TestCases.SmokeTestCompleteFlow"/>
+        <method signature="SmokeTestPageLoad.verifyPageLoaded()[pri:1, instance:com.BlazeDemo.TestCases.SmokeTestPageLoad@9816741]" name="verifyPageLoaded" class="com.BlazeDemo.TestCases.SmokeTestPageLoad"/>
+        <method signature="SmokeTestPageLoad.verifyDropdownVisibility()[pri:2, instance:com.BlazeDemo.TestCases.SmokeTestPageLoad@9816741]" name="verifyDropdownVisibility" class="com.BlazeDemo.TestCases.SmokeTestPageLoad"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2026-10-05T12:42:00 IST" name="Smoke Test" finished-at="2026-10-05T12:42:25 IST" duration-ms="25432">
+      <class name="com.BlazeDemo.TestCases.SmokeTestPageLoad">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.BlazeDemo.TestCases.SmokeTestPageLoad@9816741]" started-at="2026-10-05T12:42:00 IST" name="setUp" finished-at="2026-10-05T12:42:06 IST" duration-ms="6695" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyPageLoaded()[pri:1, instance:com.BlazeDemo.TestCases.SmokeTestPageLoad@9816741]" started-at="2026-10-05T12:42:06 IST" name="verifyPageLoaded" finished-at="2026-10-05T12:42:06 IST" duration-ms="161" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPageLoaded -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.BlazeDemo.TestCases.SmokeTestPageLoad@9816741]" started-at="2026-10-05T12:42:07 IST" name="tearDown" finished-at="2026-10-05T12:42:07 IST" duration-ms="382" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.BlazeDemo.TestCases.SmokeTestPageLoad@9816741]" started-at="2026-10-05T12:42:07 IST" name="setUp" finished-at="2026-10-05T12:42:11 IST" duration-ms="3528" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyDropdownVisibility()[pri:2, instance:com.BlazeDemo.TestCases.SmokeTestPageLoad@9816741]" started-at="2026-10-05T12:42:11 IST" name="verifyDropdownVisibility" finished-at="2026-10-05T12:42:12 IST" duration-ms="1773" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDropdownVisibility -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.BlazeDemo.TestCases.SmokeTestPageLoad@9816741]" started-at="2026-10-05T12:42:13 IST" name="tearDown" finished-at="2026-10-05T12:42:13 IST" duration-ms="517" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.BlazeDemo.TestCases.SmokeTestPageLoad -->
+      <class name="com.BlazeDemo.TestCases.SmokeTestCompleteFlow">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.BlazeDemo.TestCases.SmokeTestCompleteFlow@28194a50]" started-at="2026-10-05T12:42:13 IST" name="setUp" finished-at="2026-10-05T12:42:17 IST" duration-ms="3640" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="smokeTestCompleteFlow()[pri:0, instance:com.BlazeDemo.TestCases.SmokeTestCompleteFlow@28194a50]" started-at="2026-10-05T12:42:17 IST" name="smokeTestCompleteFlow" finished-at="2026-10-05T12:42:24 IST" duration-ms="7673" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- smokeTestCompleteFlow -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.BlazeDemo.TestCases.SmokeTestCompleteFlow@28194a50]" started-at="2026-10-05T12:42:25 IST" name="tearDown" finished-at="2026-10-05T12:42:25 IST" duration-ms="374" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.BlazeDemo.TestCases.SmokeTestCompleteFlow -->
+    </test> <!-- Smoke Test -->
+  </suite> <!-- Smoke Suite -->
+</testng-results>
